@@ -12,9 +12,9 @@ def main(argv):
     parser.add_argument('-a', '--alpha', dest = 'alpha', 
     help = 'Select a learning rate for your dataset (this should be approx .01, .03, .1, .3, 1, or 3). This defaults to .01', default = .01, type = float)
     parser.add_argument('-i', '--iterations', dest = 'iterations', help = 'Number of times to run gradient descent. This defaults to 100', default = 100, type = int)
-    parser.add_argument('-w', '--wait', help = "Keep graph open after animation until manually closed", action = 'store_true')
-    parser.add_argument('-s', '--show', help = 'Show graph animation during calculations (will not display graph if more than 1 feature exists)', action = 'store_true')
-    parser.add_argument('-c', '--cost', help = 'Output history of cost values to a file', action = 'store_true')
+    parser.add_argument('-s', '--show', help = 'Show plot animation during calculations (will not display graph if more than 1 feature exists)', action = 'store_true')
+    parser.add_argument('-w', '--wait', help = 'Show plot animation during calculations (will not display graph if more than 1 feature exists). Plot will not close after finishing.', action = 'store_true')
+    parser.add_argument('-c', '--cost', help = 'Show output of cost values to command line', action = 'store_true')
 
     # read arguments from command line
     args = parser.parse_args()
