@@ -97,14 +97,5 @@ def normalize_matrix(features):
     
     return features
 
-def show_graphs():
-    pass
-
-def show_cost_graph(features, values, theta):
-    pass
-    
-def show_gradient_graph():
-    pass
-
 if __name__ == "__main__":
     main(sys.argv[1:])
